@@ -73,7 +73,7 @@
 // };
 
 // -------------------The code 1 is here-------------
-/** /** /** /** /** /** @type {import('tailwindcss').Config} */
+/** /** /** /** /** /** /** @type {import('tailwindcss').Config} */
 module.exports = {
   webpack(config) {
     config.module.rules.push({
@@ -97,33 +97,32 @@ module.exports = {
         slideUp: "slideUp 0.5s ease-out",
       },
 
- colors: {
-  /* 🟣 Brand colors – UPDATED */
-  one: "#368081",
-  accent: "#368081",
-  brand: "#368081",
+      colors: {
+        /* 🔵 Brand colors – UPDATED */
+        one: "#286789",
+        accent: "#286789",
+        brand: "#286789",
 
-  /* 🌑 Backgrounds */
-  primary: "#0E1120",
-  secondary: "#151A33",
-  coal: "#0A0D1A",
+        /* 🌑 Backgrounds */
+        primary: "#0E1120",
+        secondary: "#151A33",
+        coal: "#0A0D1A",
 
-  /* 🎨 Supporting / UI (derived from brand) */
-  sky: "rgba(54, 128, 129, 0.1)",
-  orange: "rgba(54, 128, 129, 0.4)",
-  lightGreen: "rgba(54, 128, 129, 0.2)",
+        /* 🎨 Supporting / UI (derived from brand) */
+        sky: "rgba(40, 103, 137, 0.1)",
+        orange: "rgba(40, 103, 137, 0.4)",
+        lightGreen: "rgba(40, 103, 137, 0.2)",
 
-  /* 📊 Track / row colors */
-  track: {
-    odd: "#1B1F3A",
-    even: "#13172E",
-    purple: "#368081", // you can rename this later if you want
-  },
-},
-
+        /* 📊 Track / row colors */
+        track: {
+          odd: "#1B1F3A",
+          even: "#13172E",
+          purple: "#286789", // brand-aligned
+        },
+      },
 
       textShadow: {
-        "brand-glow": "0px 0px 50px #c037ad",
+        "brand-glow": "0px 0px 50px #286789",
       },
 
       keyframes: {

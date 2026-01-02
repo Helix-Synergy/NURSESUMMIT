@@ -4,10 +4,10 @@
 
 :root {
   /* --tw-shadow-color: #7ab326; replaced with Purple */
-  --tw-shadow-color: #368081;
---one: #368081;       /* Buttons, headings */
+  --tw-shadow-color: #286789;
+--one: #286789;       /* Buttons, headings */
   --primary: #1F1F1F;    /* Background dark */
- --accent: #368081;   /* Links, hover states */
+ --accent: #286789;   /* Links, hover states */
 }
 
 /* Page Backgrounds */
@@ -29,7 +29,7 @@
   display: flex;
   overflow: hidden;
   gap: var(--gap);
-  border: 2px dashed#368081;
+  border: 2px dashed#286789;
 }
 
 .marquee__content {
@@ -49,7 +49,7 @@
 .marquee__content > * {
   flex: 0 0 auto;
   color: #ffffff;
-  background:#368081;
+  background:#286789;
   margin: 2px;
   padding: 1rem 2rem;
   border-radius: 0.25rem;
@@ -121,7 +121,7 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #368081;
+  background-color: #286789;
   transition: transform 0.25s ease-out;
 }
 

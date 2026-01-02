@@ -224,7 +224,7 @@ const Navbar = () => {
                   ? "none"
                   : scrolled
                   ? "none"
-                  : "2px solid #c037ad",
+                  : "2px solid #286789",
               backgroundColor:
                 isOpen && window.innerWidth < 1024
                   ? "transparent"
