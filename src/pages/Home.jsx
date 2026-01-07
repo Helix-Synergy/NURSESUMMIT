@@ -38,7 +38,7 @@ const Home = () => {
           </p>
 
           <div className="float-end mt-4">
-            {/* <FlipClock /> */}
+            <FlipClock />
           </div>
         </div>
 
