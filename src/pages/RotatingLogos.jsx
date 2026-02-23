@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Images for agri
 import img1 from "../assets/tracks/img1.webp";
 import img2 from "../assets/tracks/img2.webp"
-import img3  from "../assets/tracks/img3.png";
+import img3 from "../assets/tracks/img3.png";
 import img4 from "../assets/tracks/img4.webp";
 import img5 from "../assets/tracks/img5.jpg";
 import img6 from "../assets/tracks/img6.jpg"
@@ -29,16 +29,16 @@ export const tracks = [
     title: "Public Health",
     description: (
       <>
- {" "}
+        {" "}
         <Link
-          to= "/nursesummit-orators" 
+          to="/nursesummit-orators"
           className="
              hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Public Health
+          Public Health
         </Link> nursing focuses on preventing disease, promoting health, and protecting communities. It addresses health equity, vaccination programs, maternal and child health, environmental health, and emergency preparedness. Nurses play a critical role in education, surveillance, policy implementation, and community-based interventions to improve population-level health outcomes globally.
-   
+
       </>
     ),
   },
@@ -48,13 +48,13 @@ Public Health
     title: "Future of Nursing",
     description: (
       <>
-The{" "}
+        The{" "}
         <Link
-          to=  "/nursesummit-event-schedule"
+          to="/nursesummit-event-schedule"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Future of Nursing
+          Future of Nursing
         </Link>{" "} emphasizes expanded professional roles, leadership development, advanced education, and digital integration. It highlights workforce resilience, policy engagement, interdisciplinary collaboration, and innovation in care delivery. Empowering nurses with skills, technology, and authority strengthens healthcare systems and enables patient-centered, equitable, and sustainable care for future global health challenges.
       </>
     ),
@@ -65,13 +65,13 @@ Future of Nursing
     title: "Digital Health & Tele-Nursing",
     description: (
       <>
-{" "}
+        {" "}
         <Link
           to="/venue"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Digital Health and Tele-Nursing 
+          Digital Health and Tele-Nursing
         </Link>integrate telehealth platforms, mobile technologies, and remote monitoring into nursing practice. These tools enhance access to care, continuity, patient engagement, and efficiency. Nurses use digital systems for assessment, education, monitoring, and coordination, enabling personalized, data-driven, and timely care across diverse healthcare environments worldwide.
       </>
     ),
@@ -82,7 +82,7 @@ Digital Health and Tele-Nursing
     title: "Advanced Clinical Nursing",
     description: (
       <>
-  Advanced{" "}
+        Advanced{" "}
         <Link
           to="/event_partners"
           className="hover:text-accent hover:decoration-accent
@@ -94,17 +94,17 @@ Digital Health and Tele-Nursing
   },
 
   {
-    image: img5 ,
+    image: img5,
     title: "Critical Care Nursing",
     description: (
       <>
-{" "}
+        {" "}
         <Link
-          to="/contact" 
+          to="/contact"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Critical Care Nursing 
+          Critical Care Nursing
         </Link>{" "}  provides specialized care for patients with life-threatening conditions. It emphasizes advanced monitoring, mechanical ventilation, emergency response, and rapid clinical decision-making. Nurses collaborate with multidisciplinary teams to ensure patient safety, stabilize critical conditions, support families, and deliver compassionate, high-intensity care in intensive and emergency healthcare settings.
       </>
     ),
@@ -117,11 +117,11 @@ Critical Care Nursing
       <>
 
         <Link
-          to= "/" 
+          to="/"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Mental Health
+          Mental Health
         </Link>{" "} nursing supports individuals experiencing psychological, emotional, and behavioral challenges. It focuses on assessment, therapeutic communication, crisis management, and holistic care. Nurses promote recovery, resilience, and social integration while addressing stigma, supporting families, and delivering integrated mental health services across clinical, community, and digital care settings.
       </>
     ),
@@ -132,32 +132,32 @@ Mental Health
     title: "Nursing Leadership",
     description: (
       <>
-{" "}
+        {" "}
         <Link
           to="/about-nursesummit"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
- Nursing Leadership
+          Nursing Leadership
         </Link>{" "}   develops competencies in management, communication, and strategic decision-making. It empowers nurses to lead healthcare teams, influence policy, improve quality, and drive innovation. Effective nurse leaders foster professional growth, patient safety, workforce engagement, and organizational excellence while shaping resilient and responsive healthcare systems in complex care environments.
       </>
     ),
   },
 
   {
-    image:  img8,
+    image: img8,
     title: "Infectious Disease",
     description: (
       <>
-  {" "}
+        {" "}
         <Link
-          to=  "/executive-panel-members/" 
+          to="/executive-panel-members/"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Infectious Disease
+          Infectious Disease
         </Link>{" "}  nursing focuses on prevention, detection, and management of communicable diseases. It emphasizes vaccination, surveillance, outbreak response, patient education, and antimicrobial stewardship. Nurses play a vital role in infection containment, public health preparedness, and global health security through evidence-based practice and interdisciplinary collaboration across healthcare settings.
-      
+
       </>
     ),
   },
@@ -167,13 +167,13 @@ Infectious Disease
     title: "Primary Care & Family Nursing",
     description: (
       <>
-{" "}
+        {" "}
         <Link
-          to= "/nursesummit-event-schedule"
+          to="/nursesummit-event-schedule"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Primary Care and Family Nursing
+          Primary Care and Family Nursing
         </Link>{" "} deliver comprehensive, continuous care across the lifespan. It emphasizes health promotion, disease prevention, chronic condition management, and family-centered care. Nurses support early intervention, patient education, and long-term wellness, strengthening community health outcomes and improving accessibility, affordability, and quality of primary healthcare services.
       </>
     ),
@@ -184,13 +184,13 @@ Primary Care and Family Nursing
     title: "Nursing Education",
     description: (
       <>
-{" "}
+        {" "}
         <Link
-          to="/about-nursesummit" 
+          to="/about-nursesummit"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Nursing Education        </Link>{" "} focuses on preparing competent, ethical, and skilled nursing professionals. It integrates clinical training, simulation, evidence-based curricula, and digital learning. Educators support lifelong learning, critical thinking, and professional development, ensuring nurses are prepared to meet evolving healthcare demands, technological advancements, and global patient care challenges.
+          Nursing Education        </Link>{" "} focuses on preparing competent, ethical, and skilled nursing professionals. It integrates clinical training, simulation, evidence-based curricula, and digital learning. Educators support lifelong learning, critical thinking, and professional development, ensuring nurses are prepared to meet evolving healthcare demands, technological advancements, and global patient care challenges.
       </>
     ),
   },
@@ -200,13 +200,13 @@ Nursing Education        </Link>{" "} focuses on preparing competent, ethical, a
     title: "Pediatric & Neonatal Nursing",
     description: (
       <>
-     {" "}
+        {" "}
         <Link
           to="/"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Pediatric and Neonatal Nursing
+          Pediatric and Neonatal Nursing
         </Link> specializes in caring for infants, children, and adolescents. It focuses on growth, development, family-centered care, and early intervention. Nurses manage acute and chronic pediatric conditions, support neonatal intensive care, educate families, and promote healthy outcomes during critical developmental stages.
       </>
 
@@ -218,15 +218,15 @@ Pediatric and Neonatal Nursing
     title: "Patient Safety",
     description: (
       <>
- {" "}
+        {" "}
         <Link
-          to="/" 
+          to="/"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Patient Safety
+          Patient Safety
         </Link>{" "}  in nursing focuses on preventing harm and improving care quality. It emphasizes risk management, error reduction, clinical vigilance, and adherence to best practices. Nurses promote safety culture, effective communication, and continuous improvement to ensure reliable, high-quality, and patient-centered care across all healthcare settings.
-      
+
       </>
     ),
   },
@@ -236,33 +236,33 @@ Patient Safety
     title: "Midwifery and Women’s Health",
     description: (
       <>
-{" "}
+        {" "}
         <Link
-          to="/about-nursesummit" 
+          to="/about-nursesummit"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Midwifery and Women’s Health
+          Midwifery and Women’s Health
         </Link> nursing supports reproductive, maternal, and gynecological care across the lifespan. It emphasizes prenatal care, childbirth, postnatal support, and women’s wellness. Nurses promote safe motherhood, informed decision-making, gender-sensitive care, and holistic approaches to improving women’s health outcomes globally.
-        
+
       </>
     ),
   },
 
   {
-    image:img14,
+    image: img14,
     title: "Telemedicine",
     description: (
       <>
- {" "}
+        {" "}
         <Link
-          to= "https://helixconferences.com/buy-a-ticket"
+          to="https://helixconferences.com/buy-a-ticket"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Telemedicine
+          Telemedicine
         </Link>  enables healthcare delivery through digital platforms and virtual consultations. Nurses play a key role in triage, assessment, patient education, monitoring, and follow-up care. Telemedicine improves access, continuity, and efficiency, particularly for remote populations, chronic disease management, and time-sensitive healthcare services across diverse settings.
-        
+
       </>
     ),
   },
@@ -272,15 +272,15 @@ Telemedicine
     title: "Neurodiversity",
     description: (
       <>
-      {" "}
+        {" "}
         <Link
-          to= "/about-nursesummit" 
+          to="/about-nursesummit"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-   Neurodiversity
+          Neurodiversity
         </Link> recognizes neurological differences such as autism and ADHD as natural human variations. Nursing care emphasizes inclusive, respectful, and person-centered approaches. Nurses support communication, sensory needs, behavioral strategies, and family education, promoting dignity, independence, and improved quality of life for neurodivergent individuals.
-     
+
       </>
     ),
   },
@@ -290,85 +290,85 @@ Telemedicine
     title: "Geriatric Nursing",
     description: (
       <>
-{" "}
+        {" "}
         <Link
-          to=  "/nursesummit-orators"
+          to="/nursesummit-orators"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-   Geriatric Nursing
+          Geriatric Nursing
         </Link>  addresses the complex healthcare needs of older adults. It focuses on chronic disease management, mobility, cognitive health, medication safety, and end-of-life care. Nurses promote healthy aging, independence, dignity, and quality of life while supporting families and coordinating multidisciplinary care for aging populations.
-</>
+      </>
     ),
   },
 
   {
-    image:img17,
+    image: img17,
     title: "Genetic Disorders",
     description: (
       <>
- {" "}
+        {" "}
         <Link
           to="/contact"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Genetic Disorders
+          Genetic Disorders
         </Link> nursing supports individuals with inherited and genetic conditions. It emphasizes early identification, genetic counseling, patient education, and coordinated care. Nurses help patients and families understand risks, treatment options, and lifelong management strategies, supporting informed decision-making and improving outcomes in precision and genomic medicine.
-  
+
       </>
     ),
   },
-// Ethical
+  // Ethical
 
   {
     image: img18,
     title: "Infection Control & Prevention",
     description: (
       <>
-   {" "}
+        {" "}
         <Link
-          to= "/"
+          to="/"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Infection Control and Prevention
+          Infection Control and Prevention
         </Link>  focus on reducing healthcare-associated infections. Nurses implement hygiene practices, isolation protocols, surveillance, and staff education. Effective infection control protects patients, healthcare workers, and communities, ensuring safe care environments and strengthening preparedness against outbreaks, antimicrobial resistance, and emerging infectious diseases.
       </>
     ),
   },
   // Microbiome Engineering
-  
+
   {
     image: img19,
     title: "Autism",
     description: (
       <>
-  {" "}
+        {" "}
         <Link
-          to= "https://helixconferences.com/buy-a-ticket"
+          to="https://helixconferences.com/buy-a-ticket"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-Autism
+          Autism
         </Link>-focused nursing care supports individuals with autism spectrum disorder across all life stages. It emphasizes early screening, behavioral support, communication strategies, sensory-friendly care, and family education. Nurses promote inclusion, independence, and personalized care approaches that enhance development, social participation, and overall well-being.
       </>
     ),
   },
   {
-    image:img20,
+    image: img20,
     title: "Rehabilitation Nursing",
     description: (
       <>
-{" "}
+        {" "}
         <Link
-          to="/about-nursesummit" 
+          to="/about-nursesummit"
           className="hover:text-accent hover:decoration-accent
              transition-colors duration-300"
         >
-        Rehabilitation Nursing
-</Link>{" "} supports patients recovering from injury, illness, or surgery. It focuses on restoring function, mobility, and independence through therapeutic care, education, and motivation. Nurses collaborate with multidisciplinary teams to improve physical, cognitive, and emotional recovery, enhancing quality of life and long-term health outcomes.
-       
+          Rehabilitation Nursing
+        </Link>{" "} supports patients recovering from injury, illness, or surgery. It focuses on restoring function, mobility, and independence through therapeutic care, education, and motivation. Nurses collaborate with multidisciplinary teams to improve physical, cognitive, and emotional recovery, enhancing quality of life and long-term health outcomes.
+
       </>
     ),
   },
@@ -441,7 +441,7 @@ const StaticTracks = () => {
                 <h3 className="text-xl text-gray-600 font-semibold mb-3">
                   {track.subtitle}
                 </h3>
-                <p className="text-md text-gray-800 leading-relaxed">
+                <p className="text-md text-gray-800 leading-relaxed text-justify">
                   {track.description}
                 </p>
               </div>

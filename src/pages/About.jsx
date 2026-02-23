@@ -25,25 +25,25 @@ const data = {
     organizer: "Helix Conferences",
     description: [
       <>
-  
-The <Link to="/nursesummit-orators"className="
+
+        The <Link to="/nursesummit-orators" className="
              hover:text-accent hover:decoration-accent
              transition-colors duration-300">
-World Nursing & Nurse Practices Conclave, </Link>
- organized by Helix Conferences, is a distinguished international forum dedicated to advancing professional nursing practice, clinical excellence, and leadership across global healthcare systems.
-The conclave is designed to facilitate high-level knowledge exchange, interdisciplinary collaboration, and evidence-based dialogue that strengthens nursing competencies and healthcare outcomes. Key focus areas include advanced nursing practice, patient safety, clinical decision-making, nursing education, digital health integration, mental health, and workforce resilience.
-Through keynote addresses, plenary sessions, expert-led panels, skills workshops, and practice-driven presentations, participants gain strategic insights into evolving care models, healthcare technologies, regulatory standards, and professional development pathways.
-<Link to= "/about-nursesummit"  className="
+          World Nursing & Nurse Practices Conclave, </Link>
+        organized by Helix Conferences, is a distinguished international forum dedicated to advancing professional nursing practice, clinical excellence, and leadership across global healthcare systems.
+        The conclave is designed to facilitate high-level knowledge exchange, interdisciplinary collaboration, and evidence-based dialogue that strengthens nursing competencies and healthcare outcomes. Key focus areas include advanced nursing practice, patient safety, clinical decision-making, nursing education, digital health integration, mental health, and workforce resilience.
+        Through keynote addresses, plenary sessions, expert-led panels, skills workshops, and practice-driven presentations, participants gain strategic insights into evolving care models, healthcare technologies, regulatory standards, and professional development pathways.
+        <Link to="/about-nursesummit" className="
              hover:text-accent hover:decoration-accent
              transition-colors duration-300">
- </Link>
- 
-      
+        </Link>
+
+
       </>,
       <>
         {/* From cutting-edge AI to advanced robotics, from cybersecurity trends to sustainable engineering—we curate thought-provoking content and create immersive spaces where innovation thrives. Explore our sessions to engage with the future of technology, exchange ideas with global experts, and drive impactful solutions across industries.{" "} */}
         <Link
-          to= "/nursesummit-conference-tracks/" 
+          to="/nursesummit-conference-tracks/"
           target="blank"
           rel="noopener noreferrer"
           className="text-accent font-bold"
@@ -58,53 +58,53 @@ Through keynote addresses, plenary sessions, expert-led panels, skills workshops
       // linkText: "Microbiome Science",
       // link: "/",
       suffix:
-       "Join global nursing leaders, educators, and healthcare professionals in shaping a compassionate, skilled, and future-ready nursing workforce..",
+        "Join global nursing leaders, educators, and healthcare professionals in shaping a compassionate, skilled, and future-ready nursing workforce..",
     },
   ],
-highlights: [
-  {
-    title: "Distinguished Keynote Speakers",
-    description:
-      "Engage with internationally recognized nursing leaders and healthcare experts driving excellence in nursing practice and patient care.",
-  },
-  {
-    title: "Clinical Workshops and Expert Sessions",
-    description:
-      "Participate in in-depth sessions on advanced nursing skills, evidence-based practice, patient safety, and clinical innovation.",
-  },
-  {
-    title: "Innovation and Practice Exhibition",
-    description:
-      "Explore nursing technologies, digital health tools, patient care solutions, and next-generation clinical support systems.",
-  },
-  {
-    title: "Strategic Networking Opportunities",
-    description:
-      "Connect with global nursing professionals, educators, healthcare organizations, and policy leaders.",
-  },
-  {
-    title: "Patient-Centered Care Focus",
-    description:
-      "Gain insights into holistic care models, quality improvement, ethics, and compassionate nursing practices.",
-  },
-  {
-    title: "Professional & Clinical Intelligence",
-    description:
-      "Discover the latest research, best practices, regulatory updates, and global nursing standards.",
-    linkText: "View event schedule",
-    link: "/nursesummit-event-schedule",
-  },
-  {
-    title: "Collaboration and Leadership Platforms",
-    description:
-      "Build interdisciplinary partnerships to strengthen nursing leadership and healthcare delivery.",
-  },
-  {
-    title: "Professional Development and Accreditation",
-    description:
-      "Earn professional development recognition through certified nursing education sessions and hands-on clinical workshops.",
-  },
-],
+  highlights: [
+    {
+      title: "Distinguished Keynote Speakers",
+      description:
+        "Engage with internationally recognized nursing leaders and healthcare experts driving excellence in nursing practice and patient care.",
+    },
+    {
+      title: "Clinical Workshops and Expert Sessions",
+      description:
+        "Participate in in-depth sessions on advanced nursing skills, evidence-based practice, patient safety, and clinical innovation.",
+    },
+    {
+      title: "Innovation and Practice Exhibition",
+      description:
+        "Explore nursing technologies, digital health tools, patient care solutions, and next-generation clinical support systems.",
+    },
+    {
+      title: "Strategic Networking Opportunities",
+      description:
+        "Connect with global nursing professionals, educators, healthcare organizations, and policy leaders.",
+    },
+    {
+      title: "Patient-Centered Care Focus",
+      description:
+        "Gain insights into holistic care models, quality improvement, ethics, and compassionate nursing practices.",
+    },
+    {
+      title: "Professional & Clinical Intelligence",
+      description:
+        "Discover the latest research, best practices, regulatory updates, and global nursing standards.",
+      linkText: "View event schedule",
+      link: "/nursesummit-event-schedule",
+    },
+    {
+      title: "Collaboration and Leadership Platforms",
+      description:
+        "Build interdisciplinary partnerships to strengthen nursing leadership and healthcare delivery.",
+    },
+    {
+      title: "Professional Development and Accreditation",
+      description:
+        "Earn professional development recognition through certified nursing education sessions and hands-on clinical workshops.",
+    },
+  ],
 
 
 
@@ -139,7 +139,7 @@ const AboutPublicHealth = () => {
       </div>
 
       <h1 className="text-4xl mt-2 font-bold text-one">
-Empowering Nurses Advancing Healthcare Excellence
+        Empowering Nurses Advancing Healthcare Excellence
       </h1>
       <p className="text-center text-gray-600 text-3xl mb-6">
         <strong>
@@ -150,7 +150,7 @@ Empowering Nurses Advancing Healthcare Excellence
       {data.event.description.map((desc, idx) => (
         <p
           key={idx}
-          className="mb-6 text-lg leading-relaxed text-center w-full min-w-5xl px:2 md:px-12 lg:px-24"
+          className="mb-6 text-lg leading-relaxed text-justify w-full min-w-5xl px:2 md:px-12 lg:px-24"
         >
           {desc}
         </p>
@@ -164,7 +164,7 @@ Empowering Nurses Advancing Healthcare Excellence
         {data.join.map((para, idx) => (
           <p
             key={idx}
-            className="mb-6 text-lg leading-relaxed text-center w-full min-w-5xl px:2 md:px-12 lg:px-24"
+            className="mb-6 text-lg leading-relaxed text-justify w-full min-w-5xl px:2 md:px-12 lg:px-24"
           >
             {para.text} <Link to={para.link}>{para.linkText}</Link>
             {para.suffix}
@@ -179,25 +179,25 @@ Empowering Nurses Advancing Healthcare Excellence
           <div className="bg-white rounded-xl shadow px-4 py-6 flex flex-col items-center hover:shadow-lg transition">
             <User className="h-10 w-10 text-one mb-3" />
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
- Registered Nurses and Advanced Practice Nurses
+              Registered Nurses and Advanced Practice Nurses
             </h3>
           </div>
           <div className="bg-white rounded-xl shadow px-4 py-6 flex flex-col items-center hover:shadow-lg transition">
             <BookOpen className="h-10 w-10 text-one mb-3" />
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
-Nursing Educators and Academic Leaders
+              Nursing Educators and Academic Leaders
             </h3>
           </div>
           <div className="bg-white rounded-xl shadow px-4 py-6 flex flex-col items-center hover:shadow-lg transition">
             <Rocket className="h-10 w-10 text-one mb-3" />
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
-Clinical Nurse Specialists and Nurse Practitioners
+              Clinical Nurse Specialists and Nurse Practitioners
             </h3>
           </div>
           <div className="bg-white rounded-xl shadow px-4 py-6 flex flex-col items-center hover:shadow-lg transition">
             <PackageSearch className="h-10 w-10 text-one mb-3" />
             <h3 className="text-lg font-semibold text-gray-800 mb-1">
-Nursing Administrators and Healthcare Managers
+              Nursing Administrators and Healthcare Managers
             </h3>
           </div>
         </div>
@@ -217,7 +217,7 @@ Nursing Administrators and Healthcare Managers
                 <h3 className="font-semibold whitespace-nowrap mr-1">
                   {highlight.title} –
                 </h3>
-                <p className="text-md text-gray-600 flex-1">
+                <p className="text-md text-gray-600 flex-1 text-justify">
                   {highlight.link ? (
                     <>
                       {highlight.description}{" "}

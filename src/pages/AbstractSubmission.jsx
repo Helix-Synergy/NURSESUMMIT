@@ -97,28 +97,28 @@ const AbstractSubmission = () => {
     setLoading(false);
   };
 
-const presentationOptions = [
-  "Public Health",
-  "Future of Nursing",
-  "Digital Health & Tele-Nursing",
-  "Advanced Clinical Nursing",
-  "Critical Care Nursing",
-  "Mental Health",
-  "Nursing Leadership",
-  "Infectious Disease",
-  "Primary Care & Family Nursing",
-  "Nursing Education",
-  "Pediatric & Neonatal Nursing",
-  "Patient Safety",
-  "Midwifery and Womens Health",
-  "Telemedicine",
-  "Neurodiversity",
-  "Geriatric Nursing",
-  "Genetic Disorders",
-  "Infection Control & Prevention",
-  "Autism",
-  "Rehabilitation Nursing",
-];
+  const presentationOptions = [
+    "Public Health",
+    "Future of Nursing",
+    "Digital Health & Tele-Nursing",
+    "Advanced Clinical Nursing",
+    "Critical Care Nursing",
+    "Mental Health",
+    "Nursing Leadership",
+    "Infectious Disease",
+    "Primary Care & Family Nursing",
+    "Nursing Education",
+    "Pediatric & Neonatal Nursing",
+    "Patient Safety",
+    "Midwifery and Womens Health",
+    "Telemedicine",
+    "Neurodiversity",
+    "Geriatric Nursing",
+    "Genetic Disorders",
+    "Infection Control & Prevention",
+    "Autism",
+    "Rehabilitation Nursing",
+  ];
 
 
 
@@ -148,9 +148,8 @@ const presentationOptions = [
       <form onSubmit={handleSubmit} className="space-y-4">
         {status.message && (
           <div
-            className={`w-full p-4 rounded-lg text-white text-center ${
-              status.type === "success" ? "bg-green-600" : "bg-red-600"
-            }`}
+            className={`w-full p-4 rounded-lg text-white text-center ${status.type === "success" ? "bg-green-600" : "bg-red-600"
+              }`}
           >
             {status.message}
           </div>
@@ -303,7 +302,7 @@ const presentationOptions = [
         </button>
 
         <button className="bg-one ml-2 px-4 py-2 rounded">
-          <a href="" download className="text-white">
+          <a href="/sample_abstract.pdf" download="sample_abstract.pdf" className="text-white">
             Download Demo Abstract
           </a>
         </button>

@@ -19,7 +19,7 @@ const AboutUs = () => {
         <img
           src={about_img}
           alt="AIDRUG"
-className="h-[40vh] md:min-h-[50vh] max-h-[420px] w-auto md:max-w-[420px] mx-auto md:mx-16 rounded-xl object-contain"
+className="h-[30vh] md:min-h-[40vh] max-h-[300px] w-auto md:max-w-[300px] mx-auto md:mx-16 rounded-xl object-contain"
 loading="lazy"
         />
       </div>
@@ -32,7 +32,7 @@ loading="lazy"
           <span className="text-one">Advancing Global Leadership  </span>{" "}
  in Nursing & Nurse Practices
         </h1>
-        <p className="text-base my-2">
+        <p className="text-base my-2 text-justify">
        Welcome to the premier global platform for the <Link to="https://helixconferences.com/buy-a-ticket"  className="
              hover:text-accent hover:decoration-accent
              transition-colors duration-300">  Nursing & Nurse Practices Conclave. </Link>  Our international conclaves convene nursing leaders, clinicians, educators, and healthcare innovators shaping the future of nursing practice and patient-centered care.
