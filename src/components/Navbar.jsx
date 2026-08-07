@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 import "../Styles/GoogleTranslate.css";
 
 const Navbar = () => {
@@ -17,6 +17,7 @@ const Navbar = () => {
     { name: "Orators", link: "/nursesummit-orators" },
     { name: "Schedule", link: "/nursesummit-event-schedule" },
     { name: "Venue", link: "/venue" },
+    { name: "Brochure", link: "/brochure-download" },
     { name: "Event Partners", link: "/event_partners" },
     { name: "Contact", link: "/contact" },
   ];
@@ -247,21 +248,33 @@ const Navbar = () => {
           className={`hidden lg:flex items-center text-md ${scrolled ? "gap-8 ml-4" : "gap-6 ml-8"
             }`}
         >
-          {nav_links.map((item, index) => (
-            <Link
-              key={index}
-              to={item.link}
-              className={`hover-underline-animation text-gray-700 hover:text-one transition ${location.pathname === item.link
-                  ? "active text-one"
-                  : ""
-                }`}
-              style={{
-                marginRight: scrolled ? "0px" : "4px",
-              }}
-            >
-              {item.name}
-            </Link>
-          ))}
+          {nav_links.map((item, index) => 
+            item.isDownload ? (
+              <a
+                key={index}
+                href={item.link}
+                download
+                className="hover-underline-animation text-gray-700 hover:text-one transition"
+                style={{ marginRight: scrolled ? "0px" : "4px" }}
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                key={index}
+                to={item.link}
+                className={`hover-underline-animation text-gray-700 hover:text-one transition ${location.pathname === item.link
+                    ? "active text-one"
+                    : ""
+                  }`}
+                style={{
+                  marginRight: scrolled ? "0px" : "4px",
+                }}
+              >
+                {item.name}
+              </Link>
+            )
+          )}
         </nav>
 
         {/* Desktop Right Section - large screens only */}
@@ -294,16 +307,28 @@ const Navbar = () => {
       {/* Mobile/Tablet Navigation Drawer */}
       {isOpen && (
         <div className="lg:hidden bg-white px-4 pb-4 space-y-4 shadow-md">
-          {nav_links.map((item, index) => (
-            <Link
-              key={index}
-              to={item.link}
-              className="block text-sm text-gray-800 hover:text-accent transition ml-8"
-              onClick={() => setIsOpen(false)}
-            >
-              {item.name}
-            </Link>
-          ))}
+          {nav_links.map((item, index) => 
+            item.isDownload ? (
+              <a
+                key={index}
+                href={item.link}
+                download
+                className="block text-sm text-gray-800 hover:text-accent transition ml-8"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </a>
+            ) : (
+              <Link
+                key={index}
+                to={item.link}
+                className="block text-sm text-gray-800 hover:text-accent transition ml-8"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </Link>
+            )
+          )}
           <div className="flex flex-col items-center gap-2">
             <div id="google_translate_element" className="mt-2"></div>
             <Link

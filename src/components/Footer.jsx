@@ -1,10 +1,33 @@
-import React from "react";
-import logo from "../assets/logo.png";
+import React, { useEffect, useState } from 'react';
+import logo from "../assets/logo.webp";
 import { Link } from "react-router-dom";
 import { socialLinks, WhatsAppIcon } from "../utils/Quick Links/Links";
 import { ChevronRight, Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
+
+  const [visitorStats, setVisitorStats] = useState({ totalVisits: 0, uniqueVisits: 0 });
+
+  useEffect(() => {
+    const fetchVisits = async () => {
+      try {
+        const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || "https://backend-code-6vqy.onrender.com";
+        const response = await fetch(`${API_BASE_URL}/api/get-visits`, {
+            method: 'GET',
+            headers: { 'Content-Type': 'application/json' },
+            credentials: 'omit'
+        });
+        if (response.ok) {
+            const data = await response.json();
+            setVisitorStats({ totalVisits: data.totalVisits, uniqueVisits: data.uniqueVisits });
+        }
+      } catch (err) {
+        console.warn("Could not fetch visits:", err.message);
+      }
+    };
+    fetchVisits();
+  }, []);
+
   const nav_links = [
     { name: "About", link: "/about-nursesummit" },
     { name: "Executive Panel", link: "/executive-panel-members/" },
@@ -12,12 +35,14 @@ const Footer = () => {
     { name: "Orators", link:"/nursesummit-orators"},
     { name: "Schedule", link: "/nursesummit-event-schedule" },
     { name: "Venue", link: "/venue" },
+    { name: "Brochure", link: "/brochure-download" },
     { name: "Event Partners", link: "/event_partners" },
     { name: "Contact", link: "/Contact" },
   ];
 
   return (
-    <div className="flex flex-col rounded-t-2xl md:flex-row md:justify-between bg-accent/80 px-4 sm:px-6 md:px-12 py-8 md:py-10 text-white gap-10 md:gap-6 items-start md:items-stretch">
+    <div className="flex flex-col rounded-t-2xl bg-accent/80 px-4 sm:px-6 md:px-12 py-8 md:py-10 text-white w-full">
+      <div className="flex flex-col md:flex-row md:justify-between gap-10 md:gap-6 items-start md:items-stretch w-full">
 
       {/* Grid 1 */}
       <div className="w-full md:w-1/4 flex flex-col mt-[10px] items-center md:items-start text-center md:text-left gap-4">
@@ -49,7 +74,11 @@ const Footer = () => {
               className="flex flex-row gap-1 justify-center md:justify-start items-center text-sm sm:text-base text-white"
             >
               <ChevronRight size={16} />
-              <Link to={item.link}>{item.name}</Link>
+              {item.isDownload ? (
+                <a href={item.link} download>{item.name}</a>
+              ) : (
+                <Link to={item.link}>{item.name}</Link>
+              )}
             </div>
           ))}
         </div>
@@ -87,7 +116,7 @@ const Footer = () => {
 
           <div className="flex flex-row gap-2 items-center justify-center md:justify-start text-sm sm:text-base">
             <WhatsAppIcon className="h-5 w-5 fill-orange" />
-            <p>+1-305-239-8055</p>
+            <p>+1-703-651-6096</p>
           </div>
 
           <div className="flex flex-row gap-2 items-center justify-center md:justify-start text-sm sm:text-base">
@@ -112,6 +141,12 @@ const Footer = () => {
             Register
           </Link>
         </div>
+      </div>
+      </div>
+      {/* Visitor Stats */}
+      <div className="w-full mt-8 pt-4 border-t border-accent/50 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
+        <p>Total Visitors: {visitorStats.totalVisits}</p>
+        <p>Live Visitors: {visitorStats.uniqueVisits}</p>
       </div>
     </div>
   );

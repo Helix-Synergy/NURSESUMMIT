@@ -93,23 +93,14 @@ const EventSchedule = ({ height, name, link }) => {
         )}
       </div>
 
-      {/* {link &&
-        (name === "DDownload" ? (
-          <a
-            // href=link{link}
-            download
-            className="bg-one text-white px-10 md:px-10 py-2 rounded-full mt-10 text-sm md:text-base inline-block text-center hover:bg-accent transition"
-          >
-            {name}
-          </a>
-        ) : (
-          <Link>
-          {/* // <Link to={link}> */}
-            <button className="bg-one text-white px-10 md:px-10 py-2 rounded-full mt-10 text-sm md:text-base hover:bg-accent transition">
-              Download
-            </button>
-          {/* </Link> */}
-       {/* ))} } */}
+      {link && (
+        <Link
+          to={link}
+          className="bg-one text-white px-10 md:px-10 py-2 rounded-full mt-10 text-sm md:text-base inline-block text-center hover:bg-accent transition"
+        >
+          {name}
+        </Link>
+      )}
     </div>
   );
 };
